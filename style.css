@@ -1,0 +1,56 @@
+
+.game{
+ max-width: 555px;
+  text-align: center;
+  margin:  auto;
+  color: beige;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title{
+  padding:18px 0 ;
+  margin:5px 0 ;
+  background-color: blueviolet;
+  font-size: 30px;
+  font-weight: 700;
+}
+.title span{
+  color: aquamarine;
+}
+.xo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+.item{
+width: 175px;
+height: 110px;
+background-color: black;
+color: aquamarine;
+font-size: 70px;
+font-weight: 600;
+transition: 0.2s;
+}
+.item:hover{
+  background-color: brown;
+}
+
+@media  (max-width: 555px) {
+.game{
+  width: 100%;
+  display: grid;
+   grid-template-rows: repeat(3,1fr);
+}
+.title{
+  grid-row: 1/-1;
+}
+.item{
+  width: 101px;
+  height: 90px;
+  font-size: 40px;
+  font-weight: 300;
+
+}
+}
+
